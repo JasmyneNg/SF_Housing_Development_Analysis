@@ -1,5 +1,18 @@
-#import pandas
+#import pandas (handling data) and seaborn (visuals)
 import pandas as pd 
+import seaborn as sb
+
+
+
+def cleaning_data(): 
+    return 
+
+
+def sum_net_per_year(year): 
+    return 
+
+
+
 
 #import the csv 
 df=pd.read_csv("housing_dev.csv")
