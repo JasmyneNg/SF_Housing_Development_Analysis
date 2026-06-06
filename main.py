@@ -21,6 +21,11 @@ def contains_null_value(df,column):
     else: 
         return False
 
+def check_entries_per_year(df):
+    for i in range(2005,2025): 
+      
+        print(f"Year: {i} | Number Of Entries: {(df["BMR Reporting Year"]==i).sum()}")
+
 
 #import the csv 
 df=pd.read_csv("housing_dev.csv")
@@ -30,6 +35,7 @@ df=pd.read_csv("housing_dev.csv")
 print(contains_null_value(df,"Net Units"))
 print(contains_null_value(df,"BMR Reporting Year"))
 
+check_entries_per_year(df)
 
 
 #print unique data 
