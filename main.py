@@ -26,7 +26,9 @@ def contains_null_value(df,column):
 df=pd.read_csv("housing_dev.csv")
 #print(df.columns.tolist())
 
+#Check For Null Values
 print(contains_null_value(df,"Net Units"))
+print(contains_null_value(df,"BMR Reporting Year"))
 
 
 
