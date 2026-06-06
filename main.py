@@ -18,7 +18,7 @@ def process_csv():
 def contains_null_value(df,column): 
     if (df[column].isnull().sum()!=0): 
         return True
-    eles: 
+    else: 
         return False
 
 
