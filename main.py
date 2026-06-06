@@ -3,22 +3,32 @@ import pandas as pd
 import seaborn as sb
 
 
-
+#TO DO: ADD CLEANING LOGIC 
 def cleaning_data(): 
     return 
 
-
+#TO DO: ADD LOGIC TO SUM NET UNIT PER YEAR
 def sum_net_per_year(year): 
     return 
 
-
+def process_csv(): 
+    #df=pd.read_csv("housing_dev.csv")
+    return
+    
+def contains_null_value(df,column): 
+    if (df[column].isnull().sum()!=0): 
+        return True
+    eles: 
+        return False
 
 
 #import the csv 
 df=pd.read_csv("housing_dev.csv")
 #print(df.columns.tolist())
 
-print(df)
+print(contains_null_value(df,"Net Units"))
+
+
 
 #print unique data 
 #print(df["Zoning District"].unique())
